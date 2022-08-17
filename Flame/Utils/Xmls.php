@@ -8,10 +8,12 @@
 namespace Flame\Utils;
 
 use Nette\StaticClassException;
-use Nette\Object;
+use Nette\SmartObject;
 
-class Xmls extends Object
+class Xmls
 {
+
+	use Nette\SmartObject;
 
 	/**
 	 * @throws StaticClassException

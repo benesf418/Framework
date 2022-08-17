@@ -11,10 +11,12 @@
 namespace Flame\Templating;
 
 use Nette\Diagnostics\Debugger;
-use Nette\Object;
+use Nette\SmartObject;
 
-class Helpers extends Object
+class Helpers
 {
+
+	use SmartObject;
 
 	/**
 	 * @param $helper

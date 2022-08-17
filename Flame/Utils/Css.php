@@ -8,10 +8,12 @@
 namespace Flame\Utils;
 
 use Nette\StaticClassException;
-use Nette\Object;
+use Nette\SmartObject;
 
-class Css extends Object
+class Css
 {
+
+	use SmartObject;
 
 	/**
 	 * Static class - cannot be instantiated.

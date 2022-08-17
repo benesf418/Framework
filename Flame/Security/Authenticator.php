@@ -2,14 +2,16 @@
 
 namespace Flame\Security;
 
-use Nette\Object;
+use Nette\SmartObject;
 use Nette\Security\IAuthenticator;
 
 /**
  * Users authenticator.
  */
-abstract class Authenticator extends Object implements IAuthenticator
+abstract class Authenticator implements IAuthenticator
 {
+
+	use SmartObject;
 
 	/**
 	 * @param $password

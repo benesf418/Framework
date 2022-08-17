@@ -17,7 +17,7 @@ use Nette\Utils\Strings;
  *
  * @property string $salt
  */
-class Password extends \Nette\Object
+class Password extends \Nette\SmartObject
 {
 
 	/** @var string */

@@ -8,11 +8,13 @@
 
 namespace Flame\Security;
 
-use Nette\Object;
+use Nette\SmartObject;
 use Nette\Utils\Strings;
 
-class Password extends Object
+class Password
 {
+
+	use SmartObject;
 
 	/** @var string */
 	private $password;

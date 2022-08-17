@@ -12,10 +12,12 @@ use Nette\Utils\FileSystem;
 use Nette\Caching\Cache;
 use Nette\Caching\Storages\FileStorage;
 use Nette\Caching\Storages\IJournal;
-use Nette\Object;
+use Nette\SmartObject;
 
-class CacheProvider extends Object
+class CacheProvider
 {
+
+	use SmartObject
 
 	const PERSIST_DIR = 'cache-persist';
 

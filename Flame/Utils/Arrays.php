@@ -10,11 +10,13 @@
 
 namespace Flame\Utils;
 
-use Nette\Object;
+use Nette\SmartObject;
 use Nette\StaticClassException;
 
-final class Arrays extends Object
+final class Arrays
 {
+
+	use Nette\SmartObject;
 
 	/**
 	 * Static class - cannot be instantiated.

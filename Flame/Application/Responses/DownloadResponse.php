@@ -8,11 +8,13 @@
 namespace Flame\Application\Responses;
 
 use Nette\Application\IResponse;
-use Nette\Object;
+use Nette\SmartObject;
 use Nette;
 
-class DownloadResponse extends Object implements IResponse
+class DownloadResponse implements IResponse
 {
+
+	use SmartObject;
 
 	/** @var  string */
 	private $content;
